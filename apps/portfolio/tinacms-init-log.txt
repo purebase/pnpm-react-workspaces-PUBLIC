@@ -1,0 +1,48 @@
+portfolio % pnpx @tinacms/cli@latest init
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated mdast@3.0.0
+Downloading registry.npmjs.org/@tinacms/app/1.0.4: 19.1 MB/19.1 MB, done
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated sourcemap-codec@1.4.8
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated sane@4.1.0
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated source-map-resolve@0.5.3
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated resolve-url@0.2.1
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated urix@0.1.0
+.../Library/pnpm/store/v3/tmp/dlx-82290  |  WARN  deprecated source-map-url@0.4.1
+.../Library/pnpm/store/v3/tmp/dlx-82290  | +957 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.../Library/pnpm/store/v3/tmp/dlx-82290  | Progress: resolved 976, reused 884, downloaded 71, added 957, done
+../../../../Library/pnpm/store/v3/tmp/dlx-82290/node_modules/.pnpm/styled-components@5.3.5_fane7jikarojcev26y27hpbhu4/node_modules/styled-com
+../../../../Library/pnpm/store/v3/tmp/dlx-82290/node_modules/.pnpm/styled-components@5.3.5_fane7jikarojcev26y27hpbhu4/node_modules/styled-com
+../../../../Library/pnpm/store/v3/tmp/dlx-82290/node_modules/.pnpm/leveldown@6.1.1/node_modules/leveldown: Running install script, done in 639ms
+../../../../Library/pnpm/store/v3/tmp/dlx-82290/node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild: Running postinstall script, done in 164ms
+ WARN  Issues with peer dependencies found
+.
+└─┬ @tinacms/cli 1.0.5
+  ├─┬ @graphql-codegen/typescript-generic-sdk 2.5.1
+  │ └── ✕ missing peer graphql-tag@^2.0.0
+  └─┬ @tinacms/graphql 1.0.4
+    ├─┬ @tinacms/schema-tools 1.1.0
+    │ └── ✕ missing peer react@>=16.14.0
+    └─┬ @tinacms/mdx 1.0.4
+      └─┬ typedoc 0.23.23
+        └── ✕ missing peer typescript@"4.6.x || 4.7.x || 4.8.x || 4.9.x"
+Peer dependencies that should be installed:
+  graphql-tag@^2.0.0                             typescript@"4.6.x || 4.7.x || 4.8.x || 4.9.x"
+  react@>=16.14.0
+
+The integrity of 9026 files was checked. This might have caused installation to take longer.
+✔ What is your Tina Cloud Client ID? (Hit enter to skip and set up yourself later)
+Don't have a Client ID? Create one here: https://app.tina.io/projects/new …
+✔ Choose your package manager › PNPM
+✔ What framework are you using? › Other (SSG frameworks like gatsby, etc.)
+✔ Would you like to use Typescript? … yes
+✔ Where are public assets stored? (default: "public")
+Not sure what value to use? Refer to our "Frameworks" doc: https://tina.io/docs/integration/frameworks/ …
+Adding dependencies, this might take a moment...
+  ┃ pnpm add tinacms @tinacms/cli
+Adding config file at .tina/config.ts
+No parser and no filepath given, using 'babel' the parser now but this will throw an error in the future. Please specify a parser or a filepath so one can be inferred.
+Adding content file at content/posts/hello-world.md
+
+ TinaCMS  has been initialized!
+To get started run: pnpm tinacms dev -c "<your dev command>"
+
+Once your site is running, access the CMS at <YourDevURL>/admin/index.html
