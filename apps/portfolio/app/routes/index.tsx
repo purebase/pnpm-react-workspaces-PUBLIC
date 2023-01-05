@@ -1,5 +1,5 @@
-import SharedButton from "shared-ui/SharedButton";
 import React from "react";
+import {SharedButton} from "shared-ui";
 
 export default function Index() {
   return (
