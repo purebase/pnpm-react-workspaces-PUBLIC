@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "202301-purebase-pnpm",
   "version": "1.0.0",
   "description": "",
