@@ -1,9 +1,13 @@
+import SharedButton from "shared-ui/SharedButton";
+import React from "react";
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
+          <SharedButton>bc</SharedButton>
           <a
             target="_blank"
             href="https://remix.run/tutorials/blog"

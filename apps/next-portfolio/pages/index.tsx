@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import SharedButton from "shared-ui/SharedButton";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,11 @@ export default function Home() {
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
+          </p>
+
+          <p>
+            Press this button of the shared-ui lib&nbsp;
+            <SharedButton>abc</SharedButton>
           </p>
           <div>
             <a

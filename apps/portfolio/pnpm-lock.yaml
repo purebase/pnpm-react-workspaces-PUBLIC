@@ -13,6 +13,7 @@ specifiers:
   isbot: ^3.6.5
   react: ^18.2.0
   react-dom: ^18.2.0
+  shared-ui: workspace:*
   tinacms: ^1.1.2
   typescript: ^4.8.4
 
@@ -24,6 +25,7 @@ dependencies:
   isbot: 3.6.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  shared-ui: link:../../packages/shared-ui
   tinacms: 1.1.2_ib3m5ricvtkl2cll7qpr2f6lvq
 
 devDependencies:

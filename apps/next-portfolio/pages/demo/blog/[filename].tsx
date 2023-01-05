@@ -5,14 +5,14 @@
   import { useTina } from 'tinacms/dist/react'
   import { TinaMarkdown } from 'tinacms/dist/rich-text'
   import client from '../../../.tina/__generated__/client'
-  
-  const BlogPage = (props) => {
+
+  const BlogPage = (props: any) => {
     const { data } = useTina({
       query: props.query,
       variables: props.variables,
       data: props.data,
     })
-  
+
     return (
       <>
         <Head>
@@ -51,7 +51,8 @@
       </>
     )
   }
-  
+
+// @ts-ignore
   export const getStaticProps = async ({ params }) => {
     let data = {}
     let query = {}
@@ -64,7 +65,7 @@
     } catch {
       // swallow errors related to document creation
     }
-  
+
     return {
       props: {
         variables: variables,
@@ -74,20 +75,23 @@
       },
     }
   }
-  
+
   export const getStaticPaths = async () => {
     const postsListData = await client.queries.postConnection()
-  
+
     return {
+    // @ts-ignore
       paths: postsListData.data.postConnection.edges.map((post) => ({
+        // @ts-ignore
         params: { filename: post.node._sys.filename },
       })),
       fallback: false,
     }
   }
-  
+
   export default BlogPage
-  
+
+// @ts-ignore
   const PageSection = (props) => {
     return (
       <>
@@ -100,7 +104,8 @@
   const components = {
     PageSection: PageSection,
   }
-  
+
+  // @ts-ignore
   const ContentSection = ({ content }) => {
     return (
       <div className="relative py-16 bg-white overflow-hidden">

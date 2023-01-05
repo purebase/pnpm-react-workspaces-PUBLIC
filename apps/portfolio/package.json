@@ -17,6 +17,7 @@
     "isbot": "^3.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "shared-ui": "workspace:*",
     "tinacms": "^1.1.2"
   },
   "devDependencies": {
