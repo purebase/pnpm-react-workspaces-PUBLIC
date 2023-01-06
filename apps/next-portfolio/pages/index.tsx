@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import SharedButton from "@purebase/shared-ui";
+import {Button, Headline} from "@purebase/shared-ui";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +24,8 @@ export default function Home() {
 
           <p>
             Press this button of the shared-ui lib&nbsp;
-            <SharedButton>SharedButton ABC</SharedButton>
+            <Headline text="Welcome to Purebase"/>
+            <Button onClick={() => console.log("Hello from shared-ui")}>shared-ui button</Button>
           </p>
           <div>
             <a
